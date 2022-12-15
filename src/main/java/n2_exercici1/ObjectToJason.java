@@ -4,8 +4,8 @@ import practicas.SerializeJson;
 
 public class ObjectToJason {
 	
-	public String getPath(Object object) {
-		Class<?> clazz = object.getClass();
+	public String getPath(Player player) {
+		Class<?> clazz = player.getClass();
 		return clazz.getAnnotation(SerializeJson.class).path();
 	}
 
